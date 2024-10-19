@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assest/style.css">
+    <title>task5-1</title>
+</head>
+<body>
+    <div class="bord">
+        <div class="interface">
+            <form name="form"> 
+                <input type="text" name="calc" class="input-value myInput" id="display" readonly> 
+            </form>
+            <div class="button">
+                <button class="coler" onclick="document.form.calc.value=''" >AC</button>
+                <button class="coler" onclick="document.form.calc.value+='/'">/</button>
+                <button class="coler" onclick="document.form.calc.value+='*'">*</button>
+                <button class="coler" onclick="document.form.calc.value+='-'">-</button>
+            </div>
+            <div class="button">
+                <button class="coler" onclick="document.form.calc.value+='7'">7</button>
+                <button class="coler" onclick="document.form.calc.value+='8'">8</button>
+                <button class="coler" onclick="document.form.calc.value+='9'">9</button>
+                <button class="coler" onclick="document.form.calc.value+='+'">+</button>
+            </div>
+            <div class="button">
+                <button class="coler" onclick="document.form.calc.value+='4'">4</button>
+                <button class="coler" onclick="document.form.calc.value+='5'">5</button>
+                <button class="coler" onclick="document.form.calc.value+='6'">6</button>
+                <button class="coler" onclick="calculateResult()" >=</button>
+            </div>
+            <div class="button">
+                <button class="coler" onclick="document.form.calc.value+='1'">1</button>
+                <button class="coler" onclick="document.form.calc.value+='2'">2</button>
+                <button class="coler" onclick="document.form.calc.value+='3'">3</button>
+                <button class="coler" onclick="delet()">Del</button>
+            </div>
+            <div >
+                <button class="coler" onclick="document.form.calc.value+='0'">0</button>
+                <button class="coler" onclick="document.form.calc.value+='00'">00</button>
+                <button class="coler" onclick="document.form.calc.value+='.'">.</button>
+            </div>
+        </div>
+    </div>
+    <script src="./assest/script.js"></script>
+</body>
+</html>
